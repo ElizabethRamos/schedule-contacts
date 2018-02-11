@@ -6,6 +6,12 @@ puts 'Welcome to contacts Schedule'
 
 contacts = []
 
+ADD_CONTACT = 1;
+SEE_CONTACTS = 2;
+FIND_CONTACT_BY_NAME = 3;
+FIND_CONTACT_BY_EMAIL = 4;
+FIND_CONTACT_BY_PHONE = 5;
+
 def menu()
     puts 
     puts
@@ -76,21 +82,19 @@ choose_option = gets.to_i
 
 while choose_option !=0 do
 
-    if(choose_option == 1)
+    if(choose_option == ADD_CONTACT)
         add_contact(contacts)
-
-    elsif(choose_option == 2)
+    elsif(choose_option == SEE_CONTACTS)
         see_contacts(contacts)
-
-    elsif(choose_option == 3)
+    elsif(choose_option == FIND_CONTACT_BY_NAME)
         puts "Write the name: "
         name = receive_text
         find_contact_by_name(contacts, name)
-    elsif(choose_option == 4)
+    elsif(choose_option == FIND_CONTACT_BY_EMAIL)
         puts "Write the email: "
         email = receive_text
         find_contact_by_email(contacts, email) 
-    elsif(choose_option == 5)
+    elsif(choose_option == FIND_CONTACT_BY_PHONE)
         puts "Write the phone: "
         phone = receive_text
         find_contact_by_phone(contacts, phone)    
