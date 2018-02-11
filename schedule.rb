@@ -8,6 +8,7 @@ contacts = []
 
 def menu()
     puts 
+    puts
     puts 
     puts '1 - Add a contact'
     puts '2 - See the contacts'
@@ -15,8 +16,9 @@ def menu()
     puts '4 - Find a contact by e-mail'
     puts '5 - Find a contact by phone'
     puts '0 - Exit'
-    puts 
-    puts 
+    puts
+    puts
+    puts
 end
 
 def receive_text()
